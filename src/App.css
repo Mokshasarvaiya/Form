@@ -1,19 +1,20 @@
-body{
+body {
   background-color: #2049ba;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
-container{
+container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
-.card{
+.card {
   position: relative;
   margin: 150px auto;
-  width:450px;
+  width: 450px;
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -21,44 +22,59 @@ container{
   color: black;
   background-color: #fff;
 }
- h1{
+.card2 {
+  margin: 10px auto;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 16px;
+  color: black;
+  background-color: #fff;
+}
+h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
- }
- .card div{
+}
+.h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(233, 225, 225);
+}
+.card div {
   margin-top: 12px;
- }
- label{
+}
+label {
   color: grey;
   padding-left: 4px;
   font-size: 16px;
 }
-error{
-  font-size:10px;
+error {
+  font-size: 10px;
   color: rgb(221, 30, 30);
 }
-.checkbox_line{
+.checkbox_line {
   text-align: center;
 }
-.input{
+.input {
   width: 450px;
   height: 40px;
   background-color: #fff;
   color: black;
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 5px;
   border: 0;
   padding: 2px;
-  box-shadow: 3px 3px 4px 1px rgba(0,0,0,0.28);
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.28);
 }
-.checkbox{
+.checkbox {
   background-color: #fff;
 }
-.button{
-  cursor:pointer;
-  width:160px;
+.button {
+  cursor: pointer;
+  width: 160px;
   color: white;
   height: 40px;
   background-color: #17a517;
@@ -70,20 +86,51 @@ error{
   border-radius: 0.25rem;
   margin-top: 10px;
 }
-.button2{
-background-color: rgb(187, 41, 187);
-cursor:pointer;
-width:160px;
-color: white;
-height: 40px;border: 0;
-margin-left: 25px;
-font-weight: 400;
-text-align: center;
-align-items: center;
-border-radius: 0.25rem;
-margin-top: 10px;
+.button0 {
+  cursor: pointer;
+  width: 40px;
+  color: white;
+  height: 40px;
+  background-color: #17a517;
+  border: 0;
+  margin-left: 25px;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+}
+.button1{
+
+    cursor: pointer;
+    width: 40px;
+    color: white;
+    height: 40px;
+    background-color: #f92a05;
+    border: 0;
+    margin-left: 25px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    margin-top: 10px;
+  
+}
+.button2 {
+  background-color: rgb(187, 41, 187);
+  cursor: pointer;
+  width: 160px;
+  color: white;
+  height: 40px;
+  border: 0;
+  margin-left: 25px;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  margin-top: 10px;
 }
 
-span{
- color: #2448b4;
- }
+span {
+  color: #2448b4;
+}
