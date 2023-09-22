@@ -2,6 +2,7 @@ import React from "react";
 import "./Admin.css";
 
 const Admin = () => {
+  
   return (
     <>
       <div className="card2">
@@ -21,7 +22,7 @@ const Admin = () => {
           <tbody>
             <tr>
               <td>1</td>
-              <td>jay patel</td>
+              <td> jay patel </td>
               <td>nikol</td>
               <td>jay789@gmail.com</td>
               <td>8965743252</td>
@@ -54,6 +55,7 @@ const Admin = () => {
               </td>
             </tr>
 
+           
             <tr>
               <td>1</td>
               <td>niti patel</td>
@@ -88,6 +90,8 @@ const Admin = () => {
                 </svg>
               </td>
             </tr>
+
+            
           </tbody>
         </table>
       </div>

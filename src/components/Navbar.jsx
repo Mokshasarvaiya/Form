@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import people from '../assets/people.png';
 import profile from '../assets/profile.png'
 import './Navbar.css'
+import Form_val from './Form_val';
 
-function Navbar() {
+function Navbar({isModal, setIsModal}) {
+const handleOpenForm = () => {
+  if(isModal=== false){
+    setIsModal(true)
+  }else{
+    setIsModal(false)
+  }
+}
   
   return (
     <nav className="navbar">
@@ -18,7 +26,7 @@ function Navbar() {
           className="search-input"
         />
         <button className="search-button">Search</button>
-        <img src= {profile} className='img2' alt=""  />
+        <img src= {profile} className='img2' alt="" onClick={()=>{handleOpenForm()}} />
       </div>
     </nav>
   );

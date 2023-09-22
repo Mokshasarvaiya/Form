@@ -11,9 +11,15 @@ container {
   align-items: center;
   text-align: center;
 }
-.card {
+.admin{
   position: relative;
-  margin: 150px auto;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  margin-top: 3rem;
+  margin-left: 23rem;
   width: 450px;
   display: flex;
   justify-content: center;
@@ -21,6 +27,7 @@ container {
   border-radius: 16px;
   color: black;
   background-color: #fff;
+  z-index: 999;
 }
 .card2 {
   margin: 10px auto;
@@ -36,6 +43,7 @@ h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
+  margin-top: 5px;
 }
 .h2{
   text-align: center;
@@ -86,6 +94,7 @@ error {
   border-radius: 0.25rem;
   margin-top: 10px;
 }
+
 .button0 {
   cursor: pointer;
   width: 40px;
@@ -116,6 +125,7 @@ error {
     margin-top: 10px;
   
 }
+
 .button2 {
   background-color: rgb(187, 41, 187);
   cursor: pointer;
