@@ -1,6 +1,10 @@
 import React, { useState }  from "react";
 
-const Form_val = ({setIsModal}) => {
+
+const Form_val = ({setIsModal, setVal}) => {
+  
+  
+
    const [data,setData] =useState({
     name:'',
     address:'',
@@ -16,16 +20,18 @@ const Form_val = ({setIsModal}) => {
       ...prevData,
       [name]: value,
     }));
+    setVal(data)
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(data);
-  };
+     event.preventDefault();
+     console.log(data);
+  }
+   
 
   return (
     <div className="card">
-      <form className="form" onSubmit={handleSubmit} >
+      <form className="form" >
         <span style={{paddingLeft:'28rem', cursor:'pointer',}} onClick={()=>{setIsModal(false)}}>X</span>
         <h1>Register Form</h1>
         <hr />
@@ -67,9 +73,12 @@ const Form_val = ({setIsModal}) => {
             &nbsp; I Agree <span> Company Terms</span> And <span> Policy</span>
           </div>
         </h3>
-        <button className="button" type="submit">SIGN UP</button> &nbsp; &nbsp;
+        <button className="button" type="submit" onClick={handleSubmit}>SIGN UP</button> &nbsp; &nbsp;
         <button className="button2">RESET</button>
+      
       </form>
+
+     
     </div>
   );
 };

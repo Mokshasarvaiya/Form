@@ -6,17 +6,21 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [isModal, setIsModal] = useState(false)
+  const[val,setVal] = useState([])
+
   return (
     <>
       <div className="app">
         <div className="container">
           <div className="admin">
           <Navbar isModal={isModal} setIsModal={setIsModal} />
-          <Admin />
+
+          <Admin val={val}/>
+       
           </div>
           {!isModal ? <></>
         :
-        <Form_val setIsModal={setIsModal}/> }
+        <Form_val setIsModal={setIsModal} setVal={setVal} /> }
             {/* <Form_val /> */}
         </div>
       </div>
